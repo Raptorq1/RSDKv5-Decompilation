@@ -1,17 +1,16 @@
 name: Build Sonic Mania Plus APK with SuperCancel
 
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout RSDKv5-Decompilation
+    - name: Checkout your fork of RSDKv5-Decompilation
       uses: actions/checkout@v4
       with:
-        repository: Rubberduckycooly/RSDKv5-Decompilation
         submodules: recursive
 
     - name: Clone SuperCancel Mod

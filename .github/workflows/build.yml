@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-
+    workflow_dispatch:
+    
 env:
   GENERAL_FLAGS: "-DRETRO_DISABLE_PLUS=OFF -DCMAKE_BUILD_TYPE=Release"
   V5_FLAGS: "-DRETRO_REVISION=2"
